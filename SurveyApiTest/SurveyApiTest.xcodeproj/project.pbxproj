@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		76EDA7275CD3CADE3055C2C4 /* Pods_SurveyApiTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD50B70F5B9F76EC903147B /* Pods_SurveyApiTest.framework */; };
+		DA21E9EE1E80E5C0008B9B18 /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA21E9ED1E80E5C0008B9B18 /* PageContentViewController.swift */; };
+		DA21E9F01E80E618008B9B18 /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA21E9EF1E80E618008B9B18 /* NavViewController.swift */; };
+		DA21E9F21E80E6FD008B9B18 /* SurveyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA21E9F11E80E6FD008B9B18 /* SurveyPageViewController.swift */; };
+		DA21E9F41E80E807008B9B18 /* ItemAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA21E9F31E80E807008B9B18 /* ItemAPI.swift */; };
+		DA21E9F61E80E941008B9B18 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA21E9F51E80E941008B9B18 /* QuestionViewController.swift */; };
 		DA38D31B1E804D3300B5CCDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA38D31A1E804D3300B5CCDE /* AppDelegate.swift */; };
 		DA38D3201E804D3300B5CCDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA38D31E1E804D3300B5CCDE /* Main.storyboard */; };
 		DA38D3221E804D3300B5CCDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA38D3211E804D3300B5CCDE /* Assets.xcassets */; };
@@ -18,6 +23,11 @@
 		65331099A5BFF39E5D4F2403 /* Pods-SurveyApiTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurveyApiTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SurveyApiTest/Pods-SurveyApiTest.debug.xcconfig"; sourceTree = "<group>"; };
 		A60A654D9432B0FFAC6884F2 /* Pods-SurveyApiTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurveyApiTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-SurveyApiTest/Pods-SurveyApiTest.release.xcconfig"; sourceTree = "<group>"; };
 		CBD50B70F5B9F76EC903147B /* Pods_SurveyApiTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SurveyApiTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA21E9ED1E80E5C0008B9B18 /* PageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
+		DA21E9EF1E80E618008B9B18 /* NavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
+		DA21E9F11E80E6FD008B9B18 /* SurveyPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyPageViewController.swift; sourceTree = "<group>"; };
+		DA21E9F31E80E807008B9B18 /* ItemAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemAPI.swift; sourceTree = "<group>"; };
+		DA21E9F51E80E941008B9B18 /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		DA38D3171E804D3300B5CCDE /* SurveyApiTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurveyApiTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA38D31A1E804D3300B5CCDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA38D31F1E804D3300B5CCDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -81,6 +91,11 @@
 				DA38D3211E804D3300B5CCDE /* Assets.xcassets */,
 				DA38D3231E804D3300B5CCDE /* LaunchScreen.storyboard */,
 				DA38D3261E804D3300B5CCDE /* Info.plist */,
+				DA21E9ED1E80E5C0008B9B18 /* PageContentViewController.swift */,
+				DA21E9EF1E80E618008B9B18 /* NavViewController.swift */,
+				DA21E9F11E80E6FD008B9B18 /* SurveyPageViewController.swift */,
+				DA21E9F31E80E807008B9B18 /* ItemAPI.swift */,
+				DA21E9F51E80E941008B9B18 /* QuestionViewController.swift */,
 			);
 			path = SurveyApiTest;
 			sourceTree = "<group>";
@@ -210,6 +225,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA38D31B1E804D3300B5CCDE /* AppDelegate.swift in Sources */,
+				DA21E9F41E80E807008B9B18 /* ItemAPI.swift in Sources */,
+				DA21E9F61E80E941008B9B18 /* QuestionViewController.swift in Sources */,
+				DA21E9F01E80E618008B9B18 /* NavViewController.swift in Sources */,
+				DA21E9EE1E80E5C0008B9B18 /* PageContentViewController.swift in Sources */,
+				DA21E9F21E80E6FD008B9B18 /* SurveyPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
