@@ -9,12 +9,12 @@
 import UIKit
 
 class NavViewController: UINavigationController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNav()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
