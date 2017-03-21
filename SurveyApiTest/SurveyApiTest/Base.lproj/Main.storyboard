@@ -12,7 +12,7 @@
         <!--SURVEYS-->
         <scene sceneID="xHU-s6-zuw">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="fgu-Ze-fxu" customClass="SurveyPageViewController" customModule="SurveyApiTest" customModuleProvider="target" sceneMemberID="viewController">
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" pageSpacing="2" navigationOrientation="horizontal" spineLocation="none" id="fgu-Ze-fxu" customClass="SurveyPageViewController" customModule="SurveyApiTest" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="SURVEYS" id="bbV-07-U9q">
                         <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="a1n-9U-kwN"/>
                         <barButtonItem key="rightBarButtonItem" image="menu" id="ie1-6t-Hwx"/>

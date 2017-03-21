@@ -25,15 +25,30 @@ class SurveyPageViewController: UIPageViewController,UIPageViewControllerDataSou
             if let firstVC = self.viewControllerAtIndex(0) {
                 let viewControllers = [firstVC]
                 self.setViewControllers(viewControllers, direction: UIPageViewControllerNavigationDirection.forward, animated: false, completion: nil)
-                
             }
         }
-        
-        
     }
-    
+    //Config Pagecontrol
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        for x in self.view.subviews {
+            if x is UIScrollView {
+                x.frame = UIScreen.main.bounds
+            } else if x is UIPageControl {
+                view.translatesAutoresizingMaskIntoConstraints = false
+                x.backgroundColor = UIColor.clear
+                x.frame = CGRect(x: view.frame.width - 20, y: view.frame.height/2, width: 10, height: 10)
+                let angle = CGFloat(M_PI_2)
+                x.transform = CGAffineTransform(rotationAngle: angle)
+            }
+        }
+    }
+
     @IBAction func Reload(_ sender: Any) {
-        
+        dataController.getFeedItems { (error) in
+            self.setViewControllers([self.viewControllerAtIndex(0)!], direction: UIPageViewControllerNavigationDirection.forward, animated: false, completion: nil)
+        }
+
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -77,8 +92,7 @@ class SurveyPageViewController: UIPageViewController,UIPageViewControllerDataSou
         return 0
     }
     func presentationCount(for pageViewController: UIPageViewController) -> Int {
-        return 0
-        
+       return dataController.Name.count
     }
     func viewControllerAtIndex(_ index: Int) -> UIViewController? {
         // TODO: implement
